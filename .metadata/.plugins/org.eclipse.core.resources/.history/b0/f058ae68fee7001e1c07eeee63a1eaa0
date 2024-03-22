@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>EL 결과</title>
+</head>
+<body>
+	<h1>EL을 이용해서 출력하기</h1>
+	
+	<h3>파라미터</h3>
+	<ul>
+		<li> ${ param.name속성값 }</li>
+	</ul>
+</body>
+</html>

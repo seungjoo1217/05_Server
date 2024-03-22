@@ -1,0 +1,37 @@
+package edu.kh.jsp.controller;
+
+import java.io.IOException;
+
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+
+// 서블릿 매핑할때 주소 앞에 "/" 무조건 반드시 작성
+// 서블릿 매핑에서 유효하지 않은 url pattern...
+@WebServlet("/scope")
+public class ScopeController extends HttpServlet{
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+		RequestDispatcher dis = req.getRequestDispatcher("/WEB-INF/views/scope/scope.jsp");
+		
+		
+		// 1. page scope -> JSP 에서 확인(page scope는 jsp 파일내에서만 사용가능)
+		
+		// 2. request scope -> 요청받은곳 + 위임받은페이지
+		req.setAttribute("reqValue", "1234");
+		
+		// 3. session scope -> 
+		
+		
+		
+		
+		
+		
+	}
+}

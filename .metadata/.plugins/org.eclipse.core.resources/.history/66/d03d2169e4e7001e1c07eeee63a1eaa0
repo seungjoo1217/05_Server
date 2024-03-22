@@ -1,0 +1,9 @@
+package edu.kh.jsp.controller;
+
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+
+@WebServlet("/login") // 현재 클래스를 Servlet 등록 + /login 요청을 처리
+public class LoginController extends HttpServlet{
+
+}

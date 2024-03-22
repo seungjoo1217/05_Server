@@ -1,0 +1,9 @@
+package edu.kh.jsp.controller;
+
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+
+@WebServlet("/scope")
+public class ScopeController extends HttpServlet{
+
+}

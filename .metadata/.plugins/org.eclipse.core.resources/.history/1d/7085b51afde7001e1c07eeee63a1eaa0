@@ -1,0 +1,33 @@
+package edu.kh.jsp.controller;
+
+import java.io.IOException;
+
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet("/elTest")
+public class ELTestController extends HttpServlet{
+	
+	// a태그 요청 (get방식)
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// jsp 경로는 어디기준? webapp 기준
+		RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/views/el/elTest.jsp");
+		
+		dispatcher.forward(req, resp);
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

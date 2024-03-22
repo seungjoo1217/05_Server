@@ -1,0 +1,46 @@
+package edu.kh.jsp.controller;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import edu.kh.jsp.model.dto.Pizza;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet("/pizzaOrder")
+public class PizzaOrderController extends HttpServlet{
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+		List<Pizza> pizzaList = new ArrayList<Pizza>();
+		
+		pizzaList.add( new Pizza("치즈 피자", 8000) );
+		pizzaList.add( new Pizza("콤비네이션 피자", 9000) );
+		pizzaList.add( new Pizza("핫치킨 피자", 10000) );
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

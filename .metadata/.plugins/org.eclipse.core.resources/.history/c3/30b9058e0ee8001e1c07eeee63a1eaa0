@@ -1,0 +1,21 @@
+package edu.kh.jsp.controller;
+
+import java.io.IOException;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+
+// 서블릿 매핑할때 주소 앞에 "/" 무조건 반드시 작성
+// 서블릿 매핑에서 유효하지 않은 url pattern...
+@WebServlet("/scope")
+public class ScopeController extends HttpServlet{
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+	}
+}

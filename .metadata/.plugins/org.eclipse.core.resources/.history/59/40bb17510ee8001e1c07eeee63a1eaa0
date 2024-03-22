@@ -1,0 +1,11 @@
+package edu.kh.jsp.controller;
+
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+
+
+// 서블릿 매핑할때 주소 앞에 "/" 무조건 반드시 작성
+@WebServlet("/scope")
+public class ScopeController extends HttpServlet{
+
+}
